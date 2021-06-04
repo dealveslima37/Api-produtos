@@ -40,7 +40,7 @@ public class ProdutoResource {
 		return ResponseEntity.ok().body(produtos);
 	}
 	
-	@ApiOperation(value="Buscar um produto pro id")
+	@ApiOperation(value="Buscar um produto por id")
 	@GetMapping("/{id}")
 	public ResponseEntity<Produto> readById(@PathVariable Integer id) {
 		Produto produto = service.findById(id);
